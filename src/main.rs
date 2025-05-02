@@ -82,8 +82,15 @@ impl eframe::App for Graph {
                 ui.label("Scroll speed").on_hover_text("How fast to pand with the mouse wheel");
             });
 
-            ui.add(Slider::new(&mut self.ellipse.a, -100..=100));
-            ui.add(Slider::new(&mut self.ellipse.b, -100..=100));
+            ui.horizontal(|ui| {
+                ui.label("a: ");
+                ui.add(Slider::new(&mut self.ellipse.a, -100..=100))
+            });
+
+            ui.horizontal(|ui| {
+                ui.label("b: ");
+                ui.add(Slider::new(&mut self.ellipse.b, -100..=100))
+            });
         });
 
         egui::CentralPanel::default().show(ctx, |ui| {
