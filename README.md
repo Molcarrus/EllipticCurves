@@ -10,6 +10,6 @@ Example 1: $y^2 = x^3 + x + 1$
 
 ![](output/output1.png)
 
-
+Example 2: $y^2 = x^3 - 34x + 37$
 
 ![](output/output2.png)
