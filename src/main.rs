@@ -45,7 +45,15 @@ struct Graph {
 
 impl Default for Graph {
     fn default() -> Self {
-        Self { lock_x: false, lock_y: false, ctrl_to_zoom: false, shift_to_horizontal: false, zoom_speed: 1.0, scroll_speed: 1.0, ellipse: EllipticConstants::default() }
+        Self { 
+            lock_x: false, 
+            lock_y: false, 
+            ctrl_to_zoom: false, 
+            shift_to_horizontal: false, 
+            zoom_speed: 1.0, 
+            scroll_speed: 1.0, 
+            ellipse: EllipticConstants::default() 
+        }
     }
 }
 
